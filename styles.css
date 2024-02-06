@@ -1,0 +1,85 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url(../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf) format("truetype");
+  src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+  src: url(../assets/fonts/static/WorkSans-Bold.ttf) format("truetype");
+  src: url(../assets/fonts/static/WorkSans-Regular.ttf) format("truetype");
+  src: url(../assets/fonts/static/WorkSans-SemiBold.ttf) format("truetype");
+}
+body {
+  font-family: "Work Sans";
+}
+@media (min-width: 0) {
+  body {
+    background-image: url("../assets/images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover 50%;
+    background-color: hsl(275, 100%, 97%);
+  }
+}
+@media (min-width: 376px) {
+  body {
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover 50%;
+    background-color: hsl(275, 100%, 97%);
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex--left {
+  justify-content: flex-start;
+}
+
+@media (min-width: 0) {
+  .mainContainer {
+    max-width: 280px;
+    margin: 130px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 40px 25px;
+  }
+}
+@media (min-width: 800px) {
+  .mainContainer {
+    max-width: 700px;
+    margin: 130px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    padding: 40px 25px;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.section {
+  margin: 40px 0;
+}
+.sectionHeader {
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(292, 42%, 14%);
+}
+.sectionText {
+  margin: 30px 0;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.35;
+  color: hsl(292, 16%, 69%);
+}
+
+.sectionHeader:hover {
+  color: hsl(293, 47%, 59%);
+}/*# sourceMappingURL=styles.css.map */
